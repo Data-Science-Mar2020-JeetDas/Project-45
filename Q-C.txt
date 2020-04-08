@@ -1,0 +1,87 @@
+
+
+# Question - C : print available country
+
+country = df.groupby(['Location'])[['Period']].count()
+print("---------------------------------")
+print("\tAvailable country names : ")
+print("-------------------------------")
+print(country)
+print("-------------------------------")
+count = 0
+for row in range(len(country)): 
+        count = count+1
+print("total no. of country = ",count)        
+print("-----------------------------\n")
+---------------------------------
+        Available country names : 
+-------------------------------
+                                       Period
+Location                                     
+Afghanistan                                39
+Albania                                    29
+Algeria                                    30
+Angola                                     36
+Bahamas                                    32
+Bahrain                                    39
+Bangladesh                                 39
+Belize                                     38
+Benin                                      33
+Bhutan                                     35
+Bolivia (Plurinational State of)           32
+Botswana                                   38
+Brazil                                     32
+Brunei Darussalam                          36
+Burkina Faso                               38
+Burundi                                    36
+Cabo Verde                                 31
+Cambodia                                   36
+Cameroon                                   35
+Central African Republic                   39
+Chad                                       32
+Colombia                                   39
+Comoros                                    35
+Congo                                      33
+Côte d’Ivoire                              30
+Democratic People's Republic of Korea      30
+Democratic Republic of the Congo           35
+Djibouti                                   35
+Dominican Republic                         39
+Ecuador                                    39
+                                      ...
+Peru                                       38
+Philippines                                39
+Rwanda                                     38
+Sao Tome and Principe                      13
+Senegal                                    34
+Seychelles                                 33
+Sierra Leone                               39
+Solomon Islands                            35
+Somalia                                    38
+South Africa                               27
+South Sudan                                 8
+Sri Lanka                                  39
+Sudan                                       8
+Sudan (until 2011)                         30
+Suriname                                   32
+Syrian Arab Republic                       39
+Thailand                                   39
+Timor-Leste                                17
+Togo                                       31
+Tunisia                                    39
+Turkey                                     31
+Uganda                                     38
+United Republic of Tanzania                39
+Vanuatu                                    36
+Venezuela (Bolivarian Republic of)         18
+Viet Nam                                   31
+Yemen                                      29
+Yemen Arab Republic (until 1990)            5
+Zambia                                     33
+Zimbabwe                                   35
+
+[108 rows x 1 columns]
+-------------------------------
+total no. of country =  108
+-----------------------------
+
